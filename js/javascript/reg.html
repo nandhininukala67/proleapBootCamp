@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script type="text/javascript">/* regular expression are used to perform
+         powerful pattern matching and serch and replace function on text*/
+
+         function validation(){
+            var username=document.getElementById("uname").value;
+           //var reg=/[abc]java/;
+           //var reg=/[a-x]00/;
+           var reg=/[0-9]abc/;
+            if(reg.test(username)){
+
+                alert("valid username");
+                document.getElementById("user").style.visibility="hidden";
+
+            }
+            else{
+                //alert("Invalid");
+                document.getElementById("user").style.visibility="visible";
+            }
+         }
+
+    </script>
+</head>
+<body>
+    <form action="./text.html">
+    <input type="text" id="uname" placeholder="Enter the username"/>
+    <label id ="user" style="color:red;visibility:hidden">Invalid username</label><br><br>
+   
+    <button  type="button" onclick="validation()">Submit</button>
+
+
+</form>
+
+    
+</body>
+</html>
