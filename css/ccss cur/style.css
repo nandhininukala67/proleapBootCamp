@@ -1,0 +1,24 @@
+a{
+    color:red;
+    font-style: bold;
+    font-size:200px;
+}
+/* unvisited */
+button::after{
+    background-color: black;
+}
+button:hover{
+    background-color:chocolate;
+    text-align: center;
+}
+button:active{
+    background-color:blueviolet;
+}
+p::first-letter{
+    color:black;
+    font-size:50px;
+}
+p::first-line{
+    color: green;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
